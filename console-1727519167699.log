@@ -1,0 +1,18 @@
+var a = 100;
+undefined
+var b;
+undefined
+b='priya'
+'priya'
+b
+'priya'
+a='priya sharma'
+'priya sharma'
+a
+'priya sharma'
+b=1000000000
+1000000000
+b
+1000000000
+typeof Array
+'function'

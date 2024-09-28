@@ -1,0 +1,160 @@
+var a;
+undefined
+typeof a;
+'undefined'
+a=1000
+1000
+typeof a;
+'number'
+a=1000.00000000000000000000
+1000
+typeof a;
+'number'
+a=1000.00323230
+1000.0032323
+typeof a;
+'number'
+a=1000000000000000
+1000000000000000
+typeof a;
+'number'
+a="priya"
+'priya'
+typeof a;
+'string'
+a="312637263"
+'312637263'
+typeof a;
+'string'
+a='312637263'
+'312637263'
+typeof a;
+'string'
+a=`312637263`
+'312637263'
+typeof a;
+'string'
+a=true
+true
+typeof a;
+'boolean'
+a=false
+false
+typeof a;
+'boolean'
+'priya'+'sharma'
+'priyasharma'
+'priya'+100
+'priya100'
+100+'priya'
+'100priya'
+'priya'+true
+'priyatrue'
+true+'priya'
+'truepriya'
+true+true
+2
+1000-true
+999
+1000+true
+1001
+var a=100
+undefined
+var b=300
+undefined
+var c=2000
+undefined
+"a is "+a+" b is "+b+" c is "+c
+'a is 100 b is 300 c is 2000'
+`a is ${a} b is ${b} c is ${c}`
+'a is 100 b is 300 c is 2000'
+a="priya"
+'priya'
+`a is ${a} b is ${b} c is ${c}`
+'a is priya b is 300 c is 2000'
+var a = Number.MAX_SAFE_INTEGER
+undefined
+a
+9007199254740991
+a++
+9007199254740991
+a++
+9007199254740992
+a++
+9007199254740992
+a++
+9007199254740992
+a++
+9007199254740992
+a=9007199254740992n
+9007199254740992n
+a++
+9007199254740992n
+a++
+9007199254740993n
+a++
+9007199254740994n
+a++
+9007199254740995n
+a++
+9007199254740996n
+a++
+9007199254740997n
+a++
+9007199254740998n
+a++
+9007199254740999n
+typeof a
+'bigint'
+var b=90n
+undefined
+typeof b
+'bigint'
+b+'priya'
+'90priya'
+b
+90n
+b+true
+VM1155:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:2
+(anonymous) @ VM1155:1
+b+10
+VM1170:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:2
+(anonymous) @ VM1170:1
+var arr=[1,2,3,4,5,6]
+undefined
+arr
+(6) [1, 2, 3, 4, 5, 6]0: 11: 22: 33: 44: 55: 6length: 6[[Prototype]]: Array(0)
+typeof arr
+'object'
+var h= {name:'priya',id:100,department:'IT'}
+undefined
+h
+{name: 'priya', id: 100, department: 'IT'}department: "IT"id: 100name: "priya"[[Prototype]]: Object
+typeof h
+'object'
+arr instanceof Array;
+true
+arr.length
+6
+arr instanceof Object;
+true
+h instanceof Object;
+true
+arr
+(6) [1, 2, 3, 4, 5, 6]
+arr.pop()
+6
+ar
+VM1584:1 Uncaught ReferenceError: ar is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1584:1
+arr
+(5) [1, 2, 3, 4, 5]
+arr.push(1111)
+6
+arr
+(6) [1, 2, 3, 4, 5, 1111]
+h.department
+'IT'

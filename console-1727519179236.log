@@ -1,0 +1,41 @@
+var a=100;
+undefined
+var b=a;
+undefined
+b
+100
+b++
+100
+b
+101
+a
+100
+b+1
+102
+b
+101
+var arr = [1, 2, 3];
+
+undefined
+var arr1=[10,20,30,40,50]
+undefined
+var arr2=arr1;
+undefined
+arr2
+(5) [10, 20, 30, 40, 50]
+arr2.pop();
+50
+arr2
+(4) [10, 20, 30, 40]
+arr1
+(4) [10, 20, 30, 40]
+var obj1={name:'priya',lastname:'sharma'}
+undefined
+var obj2=obj1
+undefined
+obj2.name='xyz'
+'xyz'
+obj2
+{name: 'xyz', lastname: 'sharma'}
+obj1
+{name: 'xyz', lastname: 'sharma'}
