@@ -1,0 +1,71 @@
+var obj={name:'priya',lastname:'sharma'}
+undefined
+obj=null
+null
+typeof obj
+'object'
+null+1
+1
+var a='priya'
+undefined
+a.length
+5
+typeof a
+'string'
+string instanceof Object 
+VM480:1 Uncaught ReferenceError: string is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM480:1
+a
+'priya'
+a.toUpperCase()
+'PRIYA'
+a
+'priya'
+String instanceof Object
+true
+a
+'priya'
+typeof a
+'string'
+var b= new String(a)
+undefined
+b
+String {'priya'}
+typeof String
+'function'
+typeof b
+'object'
+var c= new String("sharma")
+undefined
+c
+String {'sharma'}
+typeof c
+'object'
+c.length
+6
+c
+String {'sharma'}0: "s"1: "h"2: "a"3: "r"4: "m"5: "a"length: 6[[Prototype]]: String[[PrimitiveValue]]: "sharma"
+var d= new Number(100)
+undefined
+d
+Number {100}
+typeof d
+'object'
+var bool= new Boolean(true)
+undefined
+bool
+Boolean {true}
+typeof bool
+'object'
+var h= new BigInt(20n)
+VM1172:1 Uncaught TypeError: BigInt is not a constructor
+    at new BigInt (<anonymous>)
+    at <anonymous>:1:8
+(anonymous) @ VM1172:1
+var h= BigInt(20n)
+undefined
+h
+20n
+typeof h
+'bigint'

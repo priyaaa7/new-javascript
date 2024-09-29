@@ -1,0 +1,125 @@
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+}
+undefined
+show(1,2)
+VM180:2 value of x is  1 value of y is 2
+undefined
+console.dir(show)
+VM276:1 ƒ show(x,y)arguments: nullcaller: nulllength: 2name: "show"prototype: {}constructor: ƒ show(x,y)[[Prototype]]: Object[[FunctionLocation]]: VM180:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM387:2 value of x is  1 value of y is 2
+VM387:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+    console.log(typeof arguments)
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM540:2 value of x is  1 value of y is 2
+VM540:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM540:4 object
+undefined
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+    console.log( arguments instanceof Array)
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM626:2 value of x is  1 value of y is 2
+VM626:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM626:4 false
+undefined
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+    console.log( arguments instanceof Object)
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM676:2 value of x is  1 value of y is 2
+VM676:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+VM676:4 true
+undefined
+function show(x,y){
+    console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+    console.log( arguments instanceof Arguments)
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM744:2 value of x is  1 value of y is 2
+VM744:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]0: 11: 22: 33: 44: 55: 56: 6callee: ƒ show(x,y)length: 7Symbol(Symbol.iterator): ƒ values()[[Prototype]]: Object
+VM744:4 Uncaught ReferenceError: Arguments is not defined
+    at show (<anonymous>:4:39)
+    at <anonymous>:1:1
+show @ VM744:4
+(anonymous) @ VM749:1
+function show(){
+    // console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+    console.log( arguments instanceof Arguments)
+}
+undefined
+function show(){
+    // console.log("value of x is ",x,'value of y is', y)
+    console.log('arguments are ',arguments);
+
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM778:3 arguments are  Arguments(7) [1, 2, 3, 4, 5, 5, 6, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+undefined
+function show(...b){
+    console.log(b);
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM846:2 (7) [1, 2, 3, 4, 5, 5, 6]
+undefined
+function show(...b){
+    console.log(b);
+}
+undefined
+function show(...b){
+    console.log(b,'',typeof b);
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM923:2 (7) [1, 2, 3, 4, 5, 5, 6] '' 'object'
+undefined
+function show(...b){
+    console.log(b,'',b instanceof Array);
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM1035:2 (7) [1, 2, 3, 4, 5, 5, 6] '' true
+undefined
+function show(x,y,...b){
+    console.log('x is ',x ,'y is ',y)
+    console.log(b,'',b instanceof Array);
+}
+undefined
+show(1,2,3,4,5,5,6)
+VM1151:2 x is  1 y is  2
+VM1151:3 (5) [3, 4, 5, 5, 6] '' true
+undefined
+function show(x,...y,...b){
+    console.log('x is ',x ,'y is ',y)
+    console.log(b,'',b instanceof Array);
+}
+VM1162:1 Uncaught SyntaxError: Rest parameter must be last formal parameter
+function show(x,...y,z){
+    console.log('x is ',x ,'y is ',y)
+    console.log(b,'',b instanceof Array);
+}
+VM1171:1 Uncaught SyntaxError: Rest parameter must be last formal parameter

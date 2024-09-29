@@ -1,0 +1,44 @@
+var obj={name:'priya',lastname:'sharma',department:'IT'}
+undefined
+for(var key in obj){
+    console.log('key is ',key);
+    
+}
+VM174:2 key is  name
+VM174:2 key is  lastname
+VM174:2 key is  department
+undefined
+for(var key in obj){
+    console.log('key is ',key);
+    console.log(obj[key]);
+}
+VM249:2 key is  name
+VM249:3 priya
+VM249:2 key is  lastname
+VM249:3 sharma
+VM249:2 key is  department
+VM249:3 IT
+undefined
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+for(var i of arr){
+    console.log('i is ',i)
+}
+VM365:2 i is  1
+VM365:2 i is  2
+VM365:2 i is  3
+VM365:2 i is  4
+VM365:2 i is  5
+VM365:2 i is  6
+undefined
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+VM456:2 1
+VM456:2 2
+VM456:2 3
+VM456:2 4
+VM456:2 5
+VM456:2 6
+undefined

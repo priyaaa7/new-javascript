@@ -1,0 +1,35 @@
+undefined==null
+true
+parseInt("0987654321")
+987654321
+var a='123456789'
+undefined
+typeof a
+'string'
+var b= parseInt(a)
+undefined
+b
+123456789
+typeof b
+'number'
+parseInt("0987654321scsc")
+987654321
+parseInt("asfsefwe0987654321")
+NaN
+typeof NaN
+'number'
+isNaN(90)
+false
+isNaN('fefwf')
+true
+isNaN(true)
+false
+true+true
+2
+isFinite(24232312424342312213122)
+true
+isFinite(2232/0)
+false
+console.log('hello world!!!!!!!')
+VM706:1 hello world!!!!!!!
+undefined
