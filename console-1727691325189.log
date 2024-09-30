@@ -1,0 +1,221 @@
+function calc(){
+     let add= function(x,y){
+     return x+y;
+     }
+    let sub= function(a,b){
+        return a-b;
+    }
+
+    return [add,sub]
+}
+undefined
+calc()
+(2) [ƒ, ƒ]0: ƒ (x,y)1: ƒ (a,b)length: 2[[Prototype]]: Array(0)
+let z = calc()
+undefined
+z
+(2) [ƒ, ƒ]
+z[0]
+ƒ (x,y){
+     return x+y;
+     }
+z[0](10,20)
+30
+z[1](10,20)
+-10
+z
+(2) [ƒ, ƒ]0: ƒ (x,y)arguments: nullcaller: nulllength: 2name: "add"prototype: {}[[FunctionLocation]]: VM116:2[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]1: ƒ (a,b)length: 2[[Prototype]]: Array(0)
+function calc(){
+     let add= function adder(x,y){
+     return x+y;
+     }
+    let sub= function subtractor(a,b){
+        return a-b;
+    }
+
+    return [add,sub]
+}
+undefined
+let z = calc()
+undefined
+z
+(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtractor(a,b)length: 2[[Prototype]]: Array(0)
+z[1](10,20)
+-10
+z[0](10,20)
+30
+function calc(){
+     let add= function adder(x,y){
+     return x+y;
+     }
+    let sub= function subtractor(a,b){
+        return a-b;
+    }
+
+    return {add,sub}
+}
+undefined
+let z = calc()
+undefined
+z
+{add: ƒ, sub: ƒ}add: ƒ adder(x,y)sub: ƒ subtractor(a,b)[[Prototype]]: Object
+z.add(100,200)
+300
+z.sub(100,200)
+-100
+add();
+var add= function adder(x,y){
+     return x+y;
+     }
+VM421:1 Uncaught TypeError: add is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM421:1
+function calc(){
+    adder(10,20); 
+    
+    function adder(x,y){
+     return x+y;
+     }
+}
+undefined
+calc()
+undefined
+function calc(){
+    adder(10,20); 
+    
+    function adder(x,y){
+    console.log(x+y)
+     }
+}
+undefined
+calc()
+VM565:5 30
+undefined
+function calc(){
+    console.log(adder(10,20)); 
+    
+    function adder(x,y){
+    console.log(x+y)
+     }
+}
+undefined
+calc()
+VM601:5 30
+VM601:2 undefined
+undefined
+var fn= ()=>{
+    console.log('i am a function');
+}
+undefined
+var fn= (x)=>{
+    console.log('i am a function',x);
+}
+undefined
+fn(3)
+VM722:2 i am a function 3
+undefined
+var fn= (x)=>{
+return x ;   
+}
+undefined
+fn(5)
+5
+var fn= (x)=>{
+    console.log('i am a function')
+return x ;   
+}
+undefined
+fn(55)
+VM850:2 i am a function
+55
+var fn= (x)=>console.log('i am a function');
+
+undefined
+fn(44)
+VM914:1 i am a function
+undefined
+var fn= x=>console.log('i am a function');
+
+undefined
+fn()
+VM944:1 i am a function
+undefined
+var fn= x=>x;
+
+undefined
+fn(433)
+433
+var fn= x=>x;
+
+undefined
+var fn= x=>x+100;
+
+undefined
+fn(433)
+533
+n()
+var n= x=>x+100;
+
+VM1046:1 Uncaught TypeError: n is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM1046:1
+let factor=2;
+let f= (x)=>x*factor;
+undefined
+f(3)
+6
+f(3)
+6
+f(3)
+6
+f(3)
+6
+f(3)
+6
+factor=6
+6
+f(3)
+18
+f(3)
+18
+f(3)
+18
+
+let f= (x)=>x**2;
+undefined
+f(4)
+16
+f(4)
+16
+f(4)
+16
+f(4)
+16
+f(4)
+16
+f(4)
+16
+
+let f= (x)=>{
+    let factor=2;
+    return x*factor;
+};
+undefined
+f(4)
+8
+f(4)
+8
+f(4)
+8
+f(4)
+8
+f(4)
+8
+f(4)
+8
+f(3)
+6
+f(3)
+6
+f(3)
+6
