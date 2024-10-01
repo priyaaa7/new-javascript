@@ -1,0 +1,90 @@
+arr= [1, 2, 1000, 4, 5, 6]
+(6) [1, 2, 1000, 4, 5, 6]
+var sum=0;
+for(var i=0;i<arr.length;i++){
+    sum+=arr[i];
+}
+1018
+arr.reduce((sum,element)=>{
+    sum+=element;
+    return sum
+})
+1018
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element)
+})
+VM391:2 sum is  1  element is  2
+VM391:2 sum is  undefined  element is  1000
+VM391:2 sum is  undefined  element is  4
+VM391:2 sum is  undefined  element is  5
+VM391:2 sum is  undefined  element is  6
+undefined
+arr
+(6) [1, 2, 1000, 4, 5, 6]
+arr.reduce((sum,element)=>{
+    sum+=element;
+    console.log('sum is ',sum,' element is ',element)
+})
+VM419:3 sum is  3  element is  2
+VM419:3 sum is  NaN  element is  1000
+VM419:3 sum is  NaN  element is  4
+VM419:3 sum is  NaN  element is  5
+VM419:3 sum is  NaN  element is  6
+undefined
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element);
+     sum+=element;
+})
+VM427:2 sum is  1  element is  2
+VM427:2 sum is  undefined  element is  1000
+VM427:2 sum is  undefined  element is  4
+VM427:2 sum is  undefined  element is  5
+VM427:2 sum is  undefined  element is  6
+undefined
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element);
+     sum=sum+element;
+})
+VM439:2 sum is  1  element is  2
+VM439:2 sum is  undefined  element is  1000
+VM439:2 sum is  undefined  element is  4
+VM439:2 sum is  undefined  element is  5
+VM439:2 sum is  undefined  element is  6
+undefined
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element);
+     sum=sum+element;
+    return sum
+})
+VM483:2 sum is  1  element is  2
+VM483:2 sum is  3  element is  1000
+VM483:2 sum is  1003  element is  4
+VM483:2 sum is  1007  element is  5
+VM483:2 sum is  1012  element is  6
+1018
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element);
+     sum=sum+element;
+    return sum
+},'')
+VM499:2 sum is    element is  1
+VM499:2 sum is  1  element is  2
+VM499:2 sum is  12  element is  1000
+VM499:2 sum is  121000  element is  4
+VM499:2 sum is  1210004  element is  5
+VM499:2 sum is  12100045  element is  6
+'121000456'
+'1'+'22'
+'122'
+arr.reduce((sum,element)=>{
+    console.log('sum is ',sum,' element is ',element);
+     sum=sum+element;
+    return sum
+},'priya')
+VM539:2 sum is  priya  element is  1
+VM539:2 sum is  priya1  element is  2
+VM539:2 sum is  priya12  element is  1000
+VM539:2 sum is  priya121000  element is  4
+VM539:2 sum is  priya1210004  element is  5
+VM539:2 sum is  priya12100045  element is  6
+'priya121000456'

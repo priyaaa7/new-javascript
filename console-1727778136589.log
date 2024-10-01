@@ -1,0 +1,72 @@
+var arr = [1000,2000,3000,4000,5000];
+
+undefined
+for(var i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+VM167:2 1000
+VM167:2 2000
+VM167:2 3000
+VM167:2 4000
+VM167:2 5000
+undefined
+function print(element){
+console.log(element);
+}
+undefined
+arr.forEach(print);
+VM332:2 1000
+VM332:2 2000
+VM332:2 3000
+VM332:2 4000
+VM332:2 5000
+undefined
+arr.forEach((ele)=>{
+    console.log(ele)
+});
+VM483:2 1000
+VM483:2 2000
+VM483:2 3000
+VM483:2 4000
+VM483:2 5000
+undefined
+arr.find((ele)=>ele>1000)
+2000
+arr.find((ele)=>ele>10000)
+undefined
+arr.find((ele)=>ele<10000)
+1000
+arr.findIndex((ele)=>ele<4000)
+0
+arr.findIndex((ele)=>ele===4000)
+3
+arr.filter((ele)=>ele>=3000)
+(3) [3000, 4000, 5000]0: 30001: 40002: 5000length: 3[[Prototype]]: Array(0)
+arr.filter((ele)=>ele===3000)
+[3000]0: 3000length: 1[[Prototype]]: Array(0)
+arr.filter((ele)=>ele)
+(5) [1000, 2000, 3000, 4000, 5000]
+arr.filter((ele)=>true)
+(5) [1000, 2000, 3000, 4000, 5000]
+var arr2= arr.filter((ele)=>ele)
+undefined
+arr2
+(5) [1000, 2000, 3000, 4000, 5000]
+arr2.pop()
+5000
+arr2
+(4) [1000, 2000, 3000, 4000]
+arr
+(5) [1000, 2000, 3000, 4000, 5000]
+arr.map((ele)=>ele+1)
+(5) [1001, 2001, 3001, 4001, 5001]
+var prices=[1000, 2000, 3000, 4000, 5000]
+undefined
+prices.map((ele)=>ele+ele*0.18)
+(5) [1180, 2360, 3540, 4720, 5900]
+var pricesWithGST= prices.map((ele)=>ele+ele*0.18)
+undefined
+pricesWithGST
+(5) [1180, 2360, 3540, 4720, 5900]
+arr
+(5) [1000, 2000, 3000, 4000, 5000]

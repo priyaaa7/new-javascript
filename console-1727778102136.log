@@ -1,0 +1,177 @@
+function likes(){
+    let count=0;
+    count++;
+}
+undefined
+likes();
+undefined
+function likes(){
+    let count=0;
+    count++;
+    return count;
+}
+undefined
+likes();
+1
+likes();
+1
+likes();
+1
+likes();
+1
+likes();
+1
+let count=0;
+function likes(){
+    count++;
+    return count;
+}
+undefined
+likes();
+1
+likes();
+2
+likes();
+3
+likes();
+4
+likes();
+5
+likes();
+6
+count=100
+100
+likes();
+101
+likes();
+102
+likes();
+103
+function outerFn(){
+let count=0;
+let likes= function (){
+    count++;
+    return count;
+}
+return likes;
+}
+undefined
+outerFn()
+ƒ (){
+    count++;
+    return count;
+}
+let fn=outerFn()
+undefined
+fn
+ƒ (){
+    count++;
+    return count;
+}
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4
+fn()
+5
+fn()
+6
+a
+VM476:1 Uncaught ReferenceError: a is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM476:1
+function add(){
+    if(10>2){
+        if(100<11000){
+            console.log(a);
+            if(2>0){
+                let a=10;
+            }
+        }
+    }
+}
+undefined
+add()
+VM610:4 Uncaught ReferenceError: a is not defined
+    at add (<anonymous>:4:25)
+    at <anonymous>:1:1
+add @ VM610:4
+(anonymous) @ VM629:1
+function outerFn(){
+let count=0;
+let likes= function (){
+    count++;
+    return count;
+}
+return likes;
+}
+undefined
+let fn= (function (){
+let count=0;
+let likes= function (){
+    count++;
+    return count;
+}
+return likes;
+})();
+undefined
+fn
+ƒ (){
+    count++;
+    return count;
+}
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4
+fn()
+5
+fn()
+6
+function outerFn(){
+let count=0;
+let likes= function (){
+    count++;
+    return count;
+}
+return likes;
+}
+undefined
+fn=outerFn()
+ƒ (){
+    count++;
+    return count;
+}
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4
+fn()
+5
+fn()
+6
+fn=outerFn()
+ƒ (){
+    count++;
+    return count;
+}
+fn()
+1
+fn()
+2
+fn()
+3
+fn()
+4

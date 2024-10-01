@@ -1,0 +1,90 @@
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+arr.some((ele)=>ele<5)
+true
+arr.every((ele)=>ele<5)
+false
+arr.every((ele)=>ele<10)
+true
+arr.push(11111)
+7
+arr
+(7) [1, 2, 3, 4, 5, 6, 11111]
+arr.pop()
+11111
+arr
+(6) [1, 2, 3, 4, 5, 6]
+arr.unshift(111111)
+7
+arr
+(7) [111111, 1, 2, 3, 4, 5, 6]
+arr.shift()
+111111
+arr
+(6) [1, 2, 3, 4, 5, 6]
+arr.splice(1)
+(5) [2, 3, 4, 5, 6]
+arr
+[1]0: 1length: 1[[Prototype]]: Array(0)
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+arr.splice(1,1)
+[2]
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+arr.splice(2,1)
+[3]
+arr
+(5) [1, 2, 4, 5, 6]
+arr.splice(2,0,1000)
+[]
+arr
+(6) [1, 2, 1000, 4, 5, 6]
+arr.splice(0,6)
+(6) [1, 2, 1000, 4, 5, 6]
+arr
+[]
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+arr= [1, 2, 1000, 4, 5, 6]
+(6) [1, 2, 1000, 4, 5, 6]
+arr.splice(2,1,'priya')
+[1000]
+arr
+(6) [1, 2, 'priya', 4, 5, 6]
+arr= [1, 2, 1000, 4, 5, 6]
+(6) [1, 2, 1000, 4, 5, 6]
+arr= [1,30,4,5,22,11,93]
+(7) [1, 30, 4, 5, 22, 11, 93]
+arr.sort((first,second)=>first-second)
+(7) [1, 4, 5, 11, 22, 30, 93]0: 11: 42: 53: 114: 225: 306: 93length: 7[[Prototype]]: Array(0)
+arr.sort((first,second)=>second-first)
+(7) [93, 30, 22, 11, 5, 4, 1]
+var arr3=['priya','yash','aman','khushi']
+undefined
+arr.sort((first,second)=>first-second)
+(7) [1, 4, 5, 11, 22, 30, 93]
+arr3.sort((first,second)=>first-second)
+(4) ['priya', 'yash', 'aman', 'khushi']
+'priya'-'yash'
+NaN
+'priya'.localeCompare('yash')
+-1
+'yash'.localeCompare('yash')
+0
+'yash'.localeCompare('aman')
+1
+arr3.sort((first,second)=>first.localeCompare(second))
+(4) ['aman', 'khushi', 'priya', 'yash']
+arr3.sort((first,second)=>second.localeCompare(first))
+(4) ['yash', 'priya', 'khushi', 'aman']
+var arr=[{name:'priya',id:100},{department:"IT",id:1000},{lastname:'sharma',id:999}]
+undefined
+arr3.sort((first,second)=>first.id-second.id)
+(4) ['yash', 'priya', 'khushi', 'aman']
+arr.sort((first,second)=>first.id-second.id)
+(3) [{…}, {…}, {…}]0: {name: 'priya', id: 100}1: {lastname: 'sharma', id: 999}2: {department: 'IT', id: 1000}length: 3[[Prototype]]: Array(0)
