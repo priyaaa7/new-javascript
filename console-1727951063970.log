@@ -1,0 +1,138 @@
+function print(){
+console.log('i am a print fn');
+}
+undefined
+setTimeout(print,5000)
+1
+VM70:2 i am a print fn
+var time= setTimeout(print,20000)
+undefined
+time
+2
+clearTimeout(time)
+undefined
+setTimeout(()=>{console.log('i am a function')},5000)
+3
+VM244:1 i am a function
+console.log('1st line')
+setTimeout(()=>{console.log('i am a function')},5000)
+console.log('3rd line')
+VM339:1 1st line
+VM339:3 3rd line
+undefined
+VM339:2 i am a function
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+    }1000);
+
+    return num**3
+}
+VM403:6 Uncaught SyntaxError: missing ) after argument list
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+    ,1000});
+
+    return num**3
+}
+VM417:6 Uncaught SyntaxError: Unexpected token ','
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+    },1000);
+
+    return num**3
+}
+undefined
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+        console.log('loop over')
+    },1000);
+
+    return num**3
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM546:1 1st line
+VM546:2 64
+VM546:3 3rd line
+undefined
+VM533:6 loop over
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM548:1 1st line
+VM548:2 64
+VM548:3 3rd line
+undefined
+VM533:6 loop over
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+        console.log('loop over')
+        return 'big task done'
+    },1000);
+
+    return num**3
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM579:1 1st line
+VM579:2 64
+VM579:3 3rd line
+undefined
+VM576:6 loop over
+function doBiggerTask(num){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+        console.log('loop over')
+        return 'big task done'
+    },1000);
+
+    
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM586:1 1st line
+VM586:2 undefined
+VM586:3 3rd line
+undefined
+VM583:6 loop over
+function doBiggerTask(callback){
+    setTimeout(()=>{
+        for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+        console.log('loop over')
+       callback('big task done');
+    },3000);  
+}
+
+function showResult(res){
+    console.log(res);
+}
+undefined
+doBiggerTask(showResult)
+undefined
+VM766:6 loop over
+VM766:12 big task done

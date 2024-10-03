@@ -1,0 +1,76 @@
+setInterval(()=>{console.log('i am a fn')},3000)
+1
+VM95:1 i am a fn
+VM95:1 i am a fn
+VM95:1 i am a fn
+VM95:1 i am a fn
+VM95:1 i am a fn
+VM95:1 i am a fn
+VM95:1 i am a fn
+clearInterval(1)
+undefined
+var t=setInterval(()=>{console.log('i am a fn')},3000)
+undefined
+VM136:1 i am a fn
+VM136:1 i am a fn
+VM136:1 i am a fn
+clearInterval(t)
+undefined
+let matchScore=0;
+let time;
+function liveScore(fn){
+     time=setInterval(()=>{
+        matchScore+=10;
+         fn(matchScore);
+    },2000)
+}
+undefined
+function showScore(result){
+    console.log('score is ',result)
+}
+undefined
+liveScore(showScore)
+undefined
+VM420:2 score is  10
+VM420:2 score is  20
+VM420:2 score is  30
+VM420:2 score is  40
+VM420:2 score is  50
+VM420:2 score is  60
+VM420:2 score is  70
+VM420:2 score is  80
+VM420:2 score is  90
+VM420:2 score is  100
+clearInterval(time)
+undefined
+let matchScore=0;
+let time;
+function liveScore(successCallback,errorCallback){
+     time=setInterval(()=>{
+        matchScore+=10;
+         if(matchScore>100){
+             errorCallback('some error occur!!!!!');
+             clearInterval(time);
+         }
+         successCallback(matchScore);
+    },2000)
+}
+undefined
+function showError(err){
+    console.log(err)
+}
+undefined
+liveScore(showScore,showError)
+undefined
+VM420:2 score is  10
+VM420:2 score is  20
+VM420:2 score is  30
+VM420:2 score is  40
+VM420:2 score is  50
+VM420:2 score is  60
+VM420:2 score is  70
+VM420:2 score is  80
+VM420:2 score is  90
+VM420:2 score is  100
+VM713:2 some error occur!!!!!
+VM420:2 score is  110

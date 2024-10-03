@@ -1,0 +1,89 @@
+function loop(){
+    for(var i=0;i<10;i++){
+        console.log('loop is',i)
+    }
+}
+undefined
+loop()
+VM145:3 loop is 0
+VM145:3 loop is 1
+VM145:3 loop is 2
+VM145:3 loop is 3
+VM145:3 loop is 4
+VM145:3 loop is 5
+VM145:3 loop is 6
+VM145:3 loop is 7
+VM145:3 loop is 8
+VM145:3 loop is 9
+undefined
+function loop(){
+    console.log('i is in the start',i)
+    for(var i=0;i<10;i++){
+        console.log('loop is',i)
+    }
+}
+undefined
+loop()
+VM229:2 i is in the start undefined
+VM229:4 loop is 0
+VM229:4 loop is 1
+VM229:4 loop is 2
+VM229:4 loop is 3
+VM229:4 loop is 4
+VM229:4 loop is 5
+VM229:4 loop is 6
+VM229:4 loop is 7
+VM229:4 loop is 8
+VM229:4 loop is 9
+undefined
+function loop(){
+    console.log('i is in the start',i)
+    (function(){
+    for(var i=0;i<10;i++){
+        console.log('loop is',i)
+    }})();
+    console.log('outside loop',i)
+}
+undefined
+loop()
+VM313:2 Uncaught ReferenceError: i is not defined
+    at loop (<anonymous>:2:37)
+    at <anonymous>:1:1
+loop @ VM313:2
+(anonymous) @ VM318:1
+function loop(){
+    // console.log('i is in the start',i)
+    (function(){
+    for(var i=0;i<10;i++){
+        console.log('loop is',i)
+    }})();
+    console.log('outside loop',i)
+}
+undefined
+loop()
+VM323:5 loop is 0
+VM323:5 loop is 1
+VM323:5 loop is 2
+VM323:5 loop is 3
+VM323:5 loop is 4
+VM323:5 loop is 5
+VM323:5 loop is 6
+VM323:5 loop is 7
+VM323:5 loop is 8
+VM323:5 loop is 9
+VM323:7 Uncaught ReferenceError: i is not defined
+    at loop (<anonymous>:7:32)
+    at <anonymous>:1:1
+loop @ VM323:7
+(anonymous) @ VM328:1
+console.log('1st line')
+console.log('2nd line');
+console.log('3rd line')
+VM493:1 1st line
+VM493:2 2nd line
+VM493:3 3rd line
+undefined
+console.log('1st line
+console.log('2nd line');
+console.log('3rd line')
+VM499:1 Uncaught SyntaxError: Invalid or unexpected token

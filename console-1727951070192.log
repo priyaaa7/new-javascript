@@ -1,0 +1,17 @@
+var temp={delhi:'30 degrees',mumbai:'25 degrees'};
+function WeatherData(fn,city){
+    setTimeout(()=>{
+        fn(temp[city]);
+    },5000);
+}
+undefined
+function getWeatherData(result){
+    console.log('Current temperature is ',result)
+}
+undefined
+WeatherData(getWeatherData,'mumbai')
+undefined
+VM275:2 Current temperature is  25 degrees
+WeatherData(getWeatherData,'delhi')
+undefined
+VM275:2 Current temperature is  30 degrees

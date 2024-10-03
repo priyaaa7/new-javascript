@@ -1,0 +1,119 @@
+function doBiggerTask(){
+for(var i=0;i<100000;i++){}
+}
+undefined
+function doBiggerTask(){
+for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+
+    return 'bigger task done!!!!'
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask());
+console.log('3rd line')
+VM383:1 1st line
+VM383:2 bigger task done!!!!
+VM383:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask());
+console.log('3rd line')
+VM385:1 1st line
+VM385:2 bigger task done!!!!
+VM385:3 3rd line
+undefined
+function doBiggerTask(num){
+for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+
+    return num**3
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM412:1 1st line
+VM412:2 125
+VM412:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM415:1 1st line
+VM415:2 125
+VM415:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM417:1 1st line
+VM417:2 125
+VM417:3 3rd line
+undefined
+let cache={};
+function doBiggerTask(num){
+    if(cache[num]){
+        return cache[num];
+    }
+for(var i=0;i<100000;i++){
+    for(var j=0;j<100000;j++){
+    }}
+    cache[num]=num**3;
+    return cache[num];
+}
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM520:1 1st line
+VM520:2 125
+VM520:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM522:1 1st line
+VM522:2 125
+VM522:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(5));
+console.log('3rd line')
+VM524:1 1st line
+VM524:2 125
+VM524:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM533:1 1st line
+VM533:2 64
+VM533:3 3rd line
+undefined
+console.log('1st line')
+console.log(doBiggerTask(4));
+console.log('3rd line')
+VM535:1 1st line
+VM535:2 64
+VM535:3 3rd line
+undefined
+cache
+{4: 64, 5: 125}4: 645: 125[[Prototype]]: Object
+var arr = [1, 2, 3,4,5,6];
+
+undefined
+function print(){
+console.log('i am a print fn');
+}
+undefined
+arr.map(print)
+VM765:2 i am a print fn
+VM765:2 i am a print fn
+VM765:2 i am a print fn
+VM765:2 i am a print fn
+VM765:2 i am a print fn
+VM765:2 i am a print fn
+(6) [undefined, undefined, undefined, undefined, undefined, undefined]0: undefined1: undefined2: undefined3: undefined4: undefined5: undefinedlength: 6[[Prototype]]: Array(0)
